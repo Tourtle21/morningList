@@ -25,4 +25,8 @@ document.getElementById("current").addEventListener('click', function() {
   chore.className = "chore";
   chore.innerHTML = chores[choreInd];
   document.getElementById("chores").append(chore);
+  document.getElementById("check").addEventListener("click", function() {
+    choreInd += 1
+    chore.innerHTML = chore[choreInd];
+  })
 })
