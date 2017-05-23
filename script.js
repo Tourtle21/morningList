@@ -12,5 +12,17 @@ for (var i = 1; i < daysInMonth + 1; i++) {
   if (date.getDate() == i) {
     div.id = "current";
   }
-  document.body.append(div);
+  document.getElementById("days").append(div);
 }
+
+var chores = ["wake up", "make bed say prayer", "read scriptures drink water", "edit minecraft", "excersize", "shower and eat", "play .io game", "brush teeth clean bathroom", "clean bedroom", "preach my gospel", "work on app"];
+var choreInd = 0;
+document.getElementById("current").addEventListener('click', function() {
+  document.getElementById("month").style.display = "none";
+  document.getElementById("days").style.display = "none";
+  document.getElementById("chores").style.display = "flex";
+  chore = document.createElement("div");
+  chore.className = "chore";
+  chore.innerHTML = chores[choreInd];
+  document.getElementById("chores").append(chore);
+})

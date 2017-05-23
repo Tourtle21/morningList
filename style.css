@@ -1,9 +1,44 @@
 .date {
-
+  height:90px;
+  width:90px;
+  background-color: #595959;
+  text-align: center;
+  line-height: 90px;
+  margin: 15px;
+  font-size:30px;
+  border:7px solid orange;
+  color: white;
 }
 #current {
+  border:7px solid red;
 
 }
+#current:hover{
+  background-color: #242424;
+  cursor: pointer;
+}
+#days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 90%;
+  margin:auto;
+  align-items: center;
+}
 #month {
+  height: 50px;
+  width: 100%;
+  display: flex;justify-content:center;
+}
+body{
+    margin:0;
+  background-color:#999999;
+    position:absolute;
+}
+#chores {
+
+}
+.chore {
   
 }
