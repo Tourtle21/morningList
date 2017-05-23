@@ -27,6 +27,7 @@ document.getElementById("current").addEventListener('click', function() {
   document.getElementById("chores").append(chore);
   document.getElementById("check").addEventListener("click", function() {
     choreInd += 1
-    chore.innerHTML = chore[choreInd];
+    chore.innerHTML = chores[choreInd];
+    document.getElementById("check").checked = false;
   })
 })
